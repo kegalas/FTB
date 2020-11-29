@@ -4,20 +4,11 @@
 用python开发的一个足球战术板软件
 
 #### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+使用pygame
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  运行main.py（要有pygame库）
 
 #### 参与贡献
 
