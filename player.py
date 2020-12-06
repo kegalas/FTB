@@ -23,21 +23,15 @@ class Player():
         #使球员的位置可以储存小数
         self.img_centerx = float(self.rect.centerx)
         self.img_centery = float(self.rect.centery)
-
         self.moving = False
-    
-    def mov(self,event):
+
+    def mov(self):
         """让球员随着鼠标移动"""
-        self.event = event
-        self.moving = fft.mouse_check_event(self.event)
-
-        if self.moving == True:
-            self.position = pygame.mouse.get_pos()
-            self.img_centerx = self.position[0]
-            self.img_centery = self.position[1]
-
-            self.rect.centerx = self.img_centerx
-            self.rect.centery = self.img_centery
+        self.position = pygame.mouse.get_pos()
+        self.img_centerx = self.position[0]
+        self.img_centery = self.position[1]
+        self.rect.centerx = self.img_centerx
+        self.rect.centery = self.img_centery
     
     def blitme(self):
         """绘制球员"""
