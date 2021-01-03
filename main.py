@@ -31,7 +31,7 @@ for i in range(0,11):
     allplyr[i].img_x = float(allplyr[i].rect.x)
     allplyr[i].img_y = float(allplyr[i].rect.y)
 
-
+#
 
 #player1 = Player.Player(screen)
 
