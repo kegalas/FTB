@@ -7,7 +7,8 @@ import ftb_functions as ftb
 pygame.init()
 screen = pygame.display.set_mode((530,800))         #窗口大小
 pygame.display.set_caption("足球战术板")        #设置标题
-localtion = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'soccer-field-s.jpg'    #背景图片位置
+localtion = os.path.dirname(os.path.abspath(__file__)) + \
+    os.sep+'images'+os.sep+'soccer-field-s.jpg'    #背景图片位置
 
 #print('the localtion: '+localtion)
 #print('2:'+os.path.dirname(os.path.abspath(__file__)))
@@ -20,8 +21,13 @@ screen.fill((230,230,230))        #背景颜色
 pygame.display.flip()               #绘制屏幕
 
 allplyr = []
+allplyr2 = []
 for i in range(0,11):
     allplyr.append(Player.Player(screen))
+
+for i in range(0,11):
+    allplyr2.append(Player.Player2(screen))
+
 
 plyrpos = ((200,230),(330,230),(80,380),(200,400),(330,400),\
     (450,380),(80,580),(200,600),(330,600),(450,580),(265,780))
@@ -47,14 +53,15 @@ ifclick = Checkclick()
 while True:
     ftb.mouse_check_event(ifclick)
     for i in range(0,11):
-        if ifclick.ifc == True:
-            allplyr[i].mov() 
+        if ifclick.ifc:
+            allplyr[i].mov(allplyr,i) 
     
     #ftb.mouse_check_event(player1)
     
     #if player1.moving == True:
     #    player1.mov()                   #移动球员
     
+
     screen.fill((230,230,230))        #背景颜色
     screen.blit(backgroundimg,(0,0))       #刷新背景
 
