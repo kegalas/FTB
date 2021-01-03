@@ -7,8 +7,11 @@ import ftb_functions as ftb
 pygame.init()
 screen = pygame.display.set_mode((530,800))         #窗口大小
 pygame.display.set_caption("足球战术板")        #设置标题
+localtion = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'soccer-field-s.jpg'    #背景图片位置
 
-localtion = os.path.dirname(__file__) + '/images/soccer-field-s.jpg'    #背景图片位置
+#print('the localtion: '+localtion)
+#print('2:'+os.path.dirname(os.path.abspath(__file__)))
+
 
 backgroundimg = pygame.image.load(localtion)           #加载背景图片
 
