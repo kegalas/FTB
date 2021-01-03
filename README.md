@@ -8,21 +8,27 @@
 
 #### 使用说明
 
-1.  运行main.py（要有pygame库）
+## Windows
 
-#### 参与贡献
+### 方法一：
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  下载源码
 
+2. 运行main.py（要有python环境和pygame库）
 
-#### 特技
+### 方法二：
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. 下载发行版
+2. 运行main.exe(还没有测试过在win7下的运行)
+
+## Linux
+
+1. 下载源码
+2. 运行main.py（要有python环境和pygame库）
+
+#### 已知问题和未来计划
+
+1. 加入对手球员
+2. 占用cpu过高
+3. 加入划线功能
+4. win7似乎确实打不开main.exe
