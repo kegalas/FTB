@@ -110,9 +110,3 @@ class Player2():
         """绘制球员"""
         self.screen.blit(self.image,self.rect)
 
-
-
-
-
-        
-
