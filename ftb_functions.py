@@ -16,3 +16,4 @@ def mouse_check_event(ifclick):      #检测鼠标按下
         if event.type == pygame.MOUSEBUTTONUP:
             if event.button == 1:       #放开左键
                 ifclick.ifc = False
+

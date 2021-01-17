@@ -116,6 +116,3 @@ class Player2():
 
         
 
-
-        
-
