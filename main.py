@@ -3,6 +3,7 @@ import sys
 import os
 import player as Player
 import ftb_functions as ftb
+import time
 
 pygame.init()
 screen = pygame.display.set_mode((530,800))         #窗口大小
@@ -71,4 +72,5 @@ while True:
     #player1.blitme()                #绘制球员
     pygame.display.update()               #刷新屏幕
 
+    time.sleep(0.004)            #保持250hz的刷新
 

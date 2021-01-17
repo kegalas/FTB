@@ -11,7 +11,7 @@ class Player():
         self.screen = screen
 
         self.localtion = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'player-s.png'      #球员图片位置
-        #print(self.localtion)
+        print(self.localtion)
         self.image = pygame.image.load(self.localtion)
         self.rect = self.image.get_rect()       #获取球员矩形
         self.screen_rect = screen.get_rect()
@@ -32,7 +32,7 @@ class Player():
         """让球员随着鼠标移动"""
         self.position = pygame.mouse.get_pos()
         self.text_intersect = False
-        for i in range(0,11):
+        for i in range(0,11):   #判断是否与其他球员重叠
             if i==number:
                 continue
             else:
@@ -45,7 +45,7 @@ class Player():
 
         if(self.position[0]>=self.img_x and self.position[0]<=self.img_x+self.rect.w\
             and self.position[1]>=self.img_y and self.position[1]<=self.img_y+self.rect.h\
-            and self.text_intersect==False):
+            and self.text_intersect==False):    #移动球员到指针处
             self.img_centerx = self.position[0]
             self.img_centery = self.position[1]
             self.rect.centerx = self.img_centerx
