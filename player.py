@@ -16,6 +16,7 @@ class Player():
         self.rect = self.image.get_rect()       #获取球员矩形
         self.screen_rect = screen.get_rect()
 
+        self.group = 1 #设置球员所处队伍
 
         #将球员开始时放在屏幕最下方正中间
         self.rect.centerx = self.screen_rect.centerx
@@ -33,7 +34,7 @@ class Player():
         self.position = pygame.mouse.get_pos()
         self.text_intersect = False
         for i in range(0,11):   #判断是否与1队球员重叠
-            if i==number:
+            if i==number and self.group == 1:
                 continue
             else:
                 if(self.position[0]>=allplyr[i].img_x and \
@@ -43,7 +44,7 @@ class Player():
                     self.text_intersect = True
                     break
         for i in range(0,11):   #判断是否与2队球员重叠
-            if i==number:
+            if i==number and self.group == 2:
                 continue
             else:
                 if(self.position[0]>=allplyr2[i].img_x and \
@@ -79,6 +80,7 @@ class Player2(Player):
         self.rect = self.image.get_rect()       #获取球员矩形
         self.screen_rect = screen.get_rect()
 
+        self.group = 2 #设置球员所处队伍
 
         #将球员开始时放在屏幕最下方正中间
         self.rect.centerx = self.screen_rect.centerx
