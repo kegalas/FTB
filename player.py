@@ -10,9 +10,9 @@ class Player():
         """储存一些基本信息"""
         self.screen = screen
 
-        self.localtion = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'player-s.png'      #球员图片位置
-        #print(self.localtion)
-        self.image = pygame.image.load(self.localtion)
+        self.location = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'player-s.png'      #球员图片位置
+        #print(self.location)
+        self.image = pygame.image.load(self.location)
         self.rect = self.image.get_rect()       #获取球员矩形
         self.screen_rect = screen.get_rect()
 
@@ -74,9 +74,9 @@ class Player2(Player):
         """储存一些基本信息"""
         self.screen = screen
 
-        self.localtion = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'player-1-s.png'      #球员图片位置
-        #print(self.localtion)
-        self.image = pygame.image.load(self.localtion)
+        self.location = os.path.dirname(os.path.abspath(__file__)) + os.sep+'images'+os.sep+'player-1-s.png'      #球员图片位置
+        #print(self.location)
+        self.image = pygame.image.load(self.location)
         self.rect = self.image.get_rect()       #获取球员矩形
         self.screen_rect = screen.get_rect()
 
