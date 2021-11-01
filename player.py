@@ -1,8 +1,11 @@
 import pygame
 import sys
 import os
-import ftb_functions as fft
+import ftb_functions as ftbf
+import button as Button 
 from pygame.sprite import Sprite
+
+#Classes
 
 class Player():
     """储存球员信息的类"""
@@ -92,3 +95,32 @@ class Player2(Player):
         self.img_x = float(self.rect.x)
         self.img_y = float(self.rect.y)
         self.moving = False
+
+#Functions
+
+def initPlyrPosition(posList,screen):
+    plyrList = []
+    for i in range(0,11):
+        plyrList.append(Player(screen))
+    for i in range(0,11):
+        plyrList[i].rect.centerx = posList[i][0]
+        plyrList[i].rect.centery = posList[i][1]
+        plyrList[i].img_centerx = float(posList[i][0])
+        plyrList[i].img_centery = float(posList[i][1])
+        plyrList[i].img_x = float(plyrList[i].rect.x)
+        plyrList[i].img_y = float(plyrList[i].rect.y)
+    return plyrList
+
+def initPlyr2Position(posList,screen):
+    plyrList = []
+    for i in range(0,11):
+        plyrList.append(Player2(screen))
+    for i in range(0,11):
+        plyrList[i].rect.centerx = posList[i][0]
+        plyrList[i].rect.centery = posList[i][1]
+        plyrList[i].img_centerx = float(posList[i][0])
+        plyrList[i].img_centery = float(posList[i][1])
+        plyrList[i].img_x = float(plyrList[i].rect.x)
+        plyrList[i].img_y = float(plyrList[i].rect.y)
+    return plyrList
+    
