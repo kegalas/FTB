@@ -8,16 +8,9 @@
 
 ## 使用说明
 
-### Windows
-
 1.  下载源码
 
-2. 运行main.py（要有python环境和pygame库）
-
-### Linux
-
-1. 下载源码
-2. 运行main.py（要有python环境和pygame库）
+2. 运行main.py（要有python环境和pygame、tkinter库）
 
 ## 已知问题和未来计划
 

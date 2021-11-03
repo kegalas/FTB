@@ -3,7 +3,6 @@ import sys
 import os
 import player as Player
 import button as Button 
-#import main as Main
 
 def mouse_check_event(ifclick):      #检测鼠标按下
     for event in pygame.event.get():
