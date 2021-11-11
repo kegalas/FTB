@@ -4,5 +4,3 @@
 /.idea/
 /__pycache__/
 /.gitignore
-/data/demo/*
-/data/save/*
